@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='DSMC',
+    name='IndependentEvaluation',
     version='0.1',
     author='Antti Isosalo',
     author_email='antti.isosalo@oulu.fi',
