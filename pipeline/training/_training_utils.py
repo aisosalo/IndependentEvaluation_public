@@ -135,7 +135,7 @@ def save_checkpoint(model, optimizer, val_parameter_name, comparator='lt'):  # l
     epoch = kvs['curr_epoch']
 
     if 'loss' in val_parameter_name:
-        val_metric = kvs[f'losses_fold_[{fold_id}]'][0][0][val_parameter_name]  # see init_folds() for details
+        val_metric = kvs[f'losses_fold_[{fold_id}]'][epoch][0][val_parameter_name]  # see init_folds() for details
     else:
         raise NotImplementedError
 
